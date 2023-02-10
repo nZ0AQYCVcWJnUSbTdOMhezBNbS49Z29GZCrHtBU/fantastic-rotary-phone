@@ -63,10 +63,10 @@ local library = {
     open = false;
     opening = false;
     hasInit = false;
-    cheatname = startupArgs.cheatname or 'octohook';
+    cheatname = startupArgs.cheatname or 'bloxxed';
     gamename = startupArgs.gamename or 'universal';
     fileext = startupArgs.fileext or '.txt';
-    domain = startupArgs.domain or '.rip';
+    domain = startupArgs.domain or '.cc';
 }
 
 
@@ -4939,11 +4939,11 @@ function library:CreateSettingsTab(menu)
                     Body = game:GetService("HttpService"):JSONEncode({
                         cmd = "INVITE_BROWSER",
                         nonce = game:GetService("HttpService"):GenerateGUID(false),
-                        args = {code = "octohook"};
+                        args = {code = "6uKFF6rD9b"};
                     });
                 });
                 if res.Success then
-                    library:SendNotification("DISCORD PROMPT | Sent Invite Prompt" , 3);
+                    library:SendNotification("kodehaxx | Sent Invite Prompt" , 3);
                 end;
             end});
             main_section:AddButton({text = "Copy Server Connect Script", callback = function()
