@@ -4956,7 +4956,7 @@ function library:CreateSettingsTab(menu)
             main_section:AddBox({text = "Cheat Name", flag = "cheat_name", input = library.cheatname, callback = function(txt)
                 library.change_name(txt, flags.cheat_domain);
             end});
-            main_section:AddBox({text = "Cheat Domain", flag = "cheat_domain", input = library.domain, callback = function(txt)
+            main_section:AddBox({text = "Cheat", flag = "cheat_domain", input = library.domain, callback = function(txt)
                 library.change_name(flags.cheat_name, txt);
             end});
         end;
